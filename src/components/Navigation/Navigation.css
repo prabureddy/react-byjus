@@ -1,0 +1,11 @@
+.SignUp {
+    background: #fff;
+    border-radius: 3px;
+    color: #0d2366 !important;
+    margin: 0 auto;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,0.07);
+    box-shadow: 2px 4px 9px 1px rgba(0,0,0,0.05);
+    transition: .2s cubic-bezier(.25,.1,.25,1) !important;
+    padding: 10px 30px !important;
+}
