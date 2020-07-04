@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 import { NavLink } from "react-router-dom";
 
@@ -6,19 +6,8 @@ import Logo from "../../assets/img/logo.png";
 
 import classes from "./Navigation.css";
 import iziToast from "izitoast";
-import Modal from "../Modal/Modal";
 
 const Navigation = () => {
-  const [showSignUpModal, setShowSignUpModal] = useState(false);
-
-  $(document).on("closed", "div#signup", (e) => {
-    setShowSignUpModal(false);
-  });
-
-  const signUpHandler = () => {
-    setShowSignUpModal(true);
-  };
-
   return (
     <header id="header" className="fixed-top header-transparent">
       <div className="container">
@@ -60,28 +49,12 @@ const Navigation = () => {
               </NavLink>
             </li>
             <li>
-              <a
-                href="#"
-                id="signup"
-                className={classes.SignUp}
-                onClick={signUpHandler}
-              >
+              <NavLink to="/signup/" exact className={classes.SignUp}>
                 Sign Up
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>
-      </div>
-      <div>
-        <Modal
-          isHidden={!showSignUpModal}
-          id="signup"
-          title="Welcome"
-          subtitle="Subtitle"
-          icon=""
-        >
-          This is Modal
-        </Modal>
       </div>
     </header>
   );

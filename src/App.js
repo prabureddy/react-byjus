@@ -1,11 +1,11 @@
 import React from 'react';
-import classes from './App.css';
+import './App.css';
 import Layout from './components/Layout/Layout';
 
 const App = () => {
   
   return (
-    <div className={[...[classes.App]].join(' ')}>
+    <div className="App">
       <Layout />
     </div>
   );
