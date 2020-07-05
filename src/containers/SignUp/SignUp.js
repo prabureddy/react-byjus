@@ -27,7 +27,7 @@ const SignUp = (props) => {
           >
             <li className="nav-item">
               <a
-                className={[...[classes.navLink]].join(
+                className={[...[classes.navLink], ...['active']].join(
                   " "
                 )}
                 id="home-tab"
