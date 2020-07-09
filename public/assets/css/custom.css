@@ -1,5 +1,5 @@
 /* .SignUp_register__1HOc1 .SignUp_navTabs__1gFTb .SignUp_navLink__1AfC2.SignUp_active__2hscf */
-a.nav-item.active{
+li.nav-item .active{
     width: 100px;
     color: #0062cc !important;
     border: 2px solid #0062cc;
